@@ -1,0 +1,3 @@
+{
+	"mongoURI": "mongodb+srv://skipper:${DB_PASSWORD}@market-app-v0.7lrfefb.mongodb.net/?retryWrites=true&w=majority"
+}
