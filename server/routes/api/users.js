@@ -15,12 +15,8 @@ router.get("/test-users", (req, res) => res.send("user route testing!"))
 // @description Get all users
 // @access Public
 router.get("/", (req, res) => {
-	console.log("router connected")
-	User.find()
-		.then((users) => res.json(users))
-		.catch((err) =>
-			res.status(404).json({ nousersfound: "No Users found" })
-		)
+	console.log(req)
+	console.log(res)
 })
 
 // @route GET api/users/:id

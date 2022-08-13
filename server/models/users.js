@@ -1,4 +1,4 @@
-import mongoose from "mongoose"
+const mongoose = require("mongoose")
 const { Schema } = mongoose
 
 const userSchema = new Schema({
@@ -18,37 +18,37 @@ const userSchema = new Schema({
 	],
 	createdEvents: [
 		{
-			isTrue: boolean,
+			isTrue: Boolean,
 			events: [],
 		},
 	],
 	createdOrganizers: [
 		{
-			isTrue: boolean,
+			isTrue: Boolean,
 			events: [],
 		},
 	],
 	createdVendors: [
 		{
-			isTrue: boolean,
+			isTrue: Boolean,
 			events: [],
 		},
 	],
 	followedOrganizers: [
 		{
-			isTrue: boolean,
+			isTrue: Boolean,
 			events: [],
 		},
 	],
 	favoritedVendors: [
 		{
-			isTrue: boolean,
+			isTrue: Boolean,
 			events: [],
 		},
 	],
 	subscribedEvents: [
 		{
-			isTrue: boolean,
+			isTrue: Boolean,
 			events: [
 				{
 					id: Number,
