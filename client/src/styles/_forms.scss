@@ -1,0 +1,30 @@
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='phone'] {
+  height: 2em;
+  border-radius: 5px;
+  border: 1px solid black;
+
+  &:focus {
+    outline: 2px $peach solid;
+    border: none;
+  }
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 0.5em;
+
+  > input {
+    margin-top: 0.25em;
+  }
+}

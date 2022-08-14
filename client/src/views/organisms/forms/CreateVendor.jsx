@@ -20,46 +20,46 @@ export default function CreateVendor() {
   return (
     <>
       <p className="text-center">
-        Organizer accounts will automatically be linked to your main account.
-        You can add additional users later.
+        Vendor accounts will automatically be linked to your main account. You
+        can add additional users later.
       </p>
       <form name="create-vendor">
         <Input
           type="text"
           inputName="name"
-          labelName="Organizer Name"
+          labelName="Vendor Name"
           value={name}
           inputChange={(e) => handleInputChange(e.target)}
         />
         <Input
           type="text"
           inputName="email"
-          labelName="Organizer Email"
+          labelName="Vendor Email"
           value={email}
           inputChange={(e) => handleInputChange(e.target)}
         />
         <Input
           type="phone"
           inputName="phone"
-          labelName="Organizer Phone"
+          labelName="Vendor Phone"
           value={phone}
           inputChange={(e) => handleInputChange(e.target)}
         />
         <Input
           type="text"
           inputName="address"
-          labelName="Organizer Address"
+          labelName="Vendor Address"
           value={address}
           inputChange={(e) => handleInputChange(e.target)}
         />
         <Input
           type="text"
           inputName="zipcode"
-          labelName="Organizer Zipcode"
+          labelName="Vendor Zipcode"
           value={zipcode}
           inputChange={(e) => handleInputChange(e.target)}
         />
-        <Button buttonCopy="Create Organizer" class="button--main" />
+        <Button buttonCopy="Create Vendor" class="button--main" />
         <Button buttonCopy="Save for Later" class="button--secondary" />
       </form>
     </>

@@ -1,5 +1,7 @@
-import Authentication from "./Authentication"
-import CreateNew from "./CreateNew"
-import Welcome from "./Welcome"
+import Authentication from './Authentication'
+import CreateNew from './CreateNew'
+import Dashboard from './Dashboard'
+import Styleguide from './Styleguide'
+import Welcome from './Welcome'
 
-export { Authentication, CreateNew, Welcome }
+export { Authentication, CreateNew, Dashboard, Styleguide, Welcome }

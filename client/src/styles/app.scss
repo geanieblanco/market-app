@@ -1,5 +1,9 @@
-@import "./base.scss";
+@import './base.scss';
 
 .rialto {
-	background-color: $white;
+  background-color: $white;
+
+  main {
+    padding: 0.5em;
+  }
 }

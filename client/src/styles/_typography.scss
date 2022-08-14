@@ -1,0 +1,31 @@
+body {
+  font-family: $body-font;
+}
+
+h1,
+h3 {
+  font-family: $display-font;
+
+  &.logo {
+    font-size: 4rem;
+  }
+}
+
+h2,
+h4 {
+  font-family: $header-font;
+}
+
+a {
+  color: $lavender;
+  text-decoration: none;
+  font-weight: bold;
+
+  &:hover {
+    color: $lavender-muted;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

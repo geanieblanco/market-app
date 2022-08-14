@@ -1,5 +1,9 @@
-import React from "react"
+import React from 'react'
 
 export default function CreateEvent() {
-	return <div>CreateEvent</div>
+  return (
+    <>
+      <p className="text-center"></p>
+    </>
+  )
 }

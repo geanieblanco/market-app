@@ -1,0 +1,48 @@
+.button,
+button {
+  border: none;
+  padding: 7px 13px;
+  border-radius: 20px;
+  transition: 0.3s;
+  font-size: 15px;
+  font-family: $body-font;
+
+  &:hover {
+    transition: 0.3s;
+  }
+
+  &.wide {
+    display: block;
+    width: 100%;
+  }
+
+  @media #{$max-600} {
+    &.mobile-wide {
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.button--main {
+  @extend .button;
+
+  background-color: $artichoke;
+  color: $white;
+
+  &:hover {
+    background-color: $artichoke-muted;
+  }
+}
+
+.button--secondary {
+  @extend .button;
+
+  border: 2px $peach solid;
+  color: $black;
+  background-color: transparent;
+
+  &:hover {
+    border-color: $peach-muted;
+  }
+}
