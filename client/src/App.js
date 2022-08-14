@@ -1,12 +1,22 @@
+import { useEffect } from "react"
+import { Outlet, useNavigate } from "react-router-dom"
+import "./styles/app.scss"
+
 function App() {
+	const navigate = useNavigate()
+
+	useEffect(() => {
+		let authToken = sessionStorage.getItem("Auth Token")
+
+		if (authToken) {
+			navigate("/dashboard")
+		}
+	})
+
 	return (
-		<div className='App'>
-			<header className='App-header'>
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-			</header>
-		</div>
+		<>
+			<Outlet />
+		</>
 	)
 }
 

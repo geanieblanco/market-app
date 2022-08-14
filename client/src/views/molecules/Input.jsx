@@ -1,11 +1,17 @@
 import React from "react"
-import { InputChoose, InputSelect, InputText, Label } from "../atoms"
+import {
+	InputChoose,
+	InputPhone,
+	InputSelect,
+	InputText,
+	Label,
+} from "../atoms/Atoms"
 
 export default function Input(props) {
 	let inputs
 	const type = props.type
 
-	if (type === "text")
+	if (type === "text" || type === "password")
 		inputs = (
 			<InputText
 				value={props.inputValue}
@@ -24,6 +30,7 @@ export default function Input(props) {
 			/>
 		)
 	if (type === "select") inputs = <InputSelect />
+	if (type === "phone") inputs = <InputPhone />
 
 	return (
 		<>

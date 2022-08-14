@@ -1,8 +1,19 @@
 import Button from "./Button"
 import Image from "./Image"
 import InputChoose from "./InputChoose"
-import InputSelect from "./inputSelect"
+import InputPhone from "./InputPhone"
+import InputSelect from "./InputSelect"
 import InputText from "./InputText"
 import Label from "./Label"
+import NavBar from "./NavBar"
 
-export { Button, Image, InputChoose, InputSelect, InputText, Label }
+export {
+	Button,
+	Image,
+	InputChoose,
+	InputPhone,
+	InputSelect,
+	InputText,
+	Label,
+	NavBar,
+}

@@ -1,4 +1,5 @@
+import AuthButton from "./AuthButton"
 import Input from "./Input"
 import Search from "./Search"
 
-export { Input, Search }
+export { AuthButton, Input, Search }
